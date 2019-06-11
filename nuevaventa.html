@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/borders.css">
+    <link rel="stylesheet" type="text/css" href="css/bgcolors/bg-colors.css">
+
+    <title>A Simple page</title>
+  </head>
+  <body>
+	<div class="bg-display">
+		<h1 class="display-4 bg-display"> InvntrY/InvntO </h1>
+	</div>
+	<div class="container-fluid">
+		<div class="row my-2">
+			<div class="col-md-2">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav nav-tabs flex-column mr-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="index3.html">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"> Usuarios </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"> Clientes </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"> Productos </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"> Proveedores </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"> Resumen </a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="sesionMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Sesion </a>
+								<div class="dropdown-menu" aria-labelledby="sesionMenu">
+									<a class="dropdown-item disabled"> Nombre Usuario </a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#"> Cerrar Sesión </a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="col-md-3 my-3">
+				<form>
+					<div class="form-group">
+						<label for="form1"> Vendedor </label>
+						<select class="form-control" id="form1">
+							<option> Vendedor 1 </option>
+							<option> Vendedor 2 </option>
+							<option> Vendedor 3 </option>
+						</select>
+						<label for="formEfectivo"> Efectivo </label>
+						<input type="text" class="form-control" id="formEfectivo" placeholder="Efectivo">
+						<label for="formVuelto"> Vuelto </label>
+						<input type="text" class="form-control" id="formVuelto" placeholder="Vuelto" readonly>
+						<label for="formTotal"> Total </label>
+						<input type="text" class="form-control" id="formTotal" placeholder="Total Compra" readonly>
+						<button type="submit" class="btn btn-block btn-dark my-2"> Confirmar Compra </button>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-7 my-3">
+	      		<table class="table">
+		            <thead>
+			          <tr>
+			            <th scope="col">#</th>
+			            <th scope="col"> Codigo </th>
+			            <th scope="col"> Cantitdad </th>
+			            <th scope="col"> Precio </th>
+			          </tr>
+			        </thead>
+			        <tbody>
+			          <tr>
+			            <th scope="row">1</th>
+			            <td> AAA321 </td>
+			            <td> 5</td>
+			            <td> 50000</td>
+			          </tr>
+			          <tr>
+			            <th scope="row">2</th>
+			            <td> AAA456 </td>
+			            <td> 1 </td>
+			            <td> 15000</td>
+			          </tr>
+			          <tr>
+			            <th scope="row">3</th>
+			            <td> AAA789 </td>
+			            <td> 2 </td>
+			            <td> 30500 </td>
+			          </tr>
+					</tbody>
+	          	</table>
+			</div>	
+		</div>
+	</div>
+	<footer class="">
+		<script>
+			var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+			var diasSemana = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
+			var f=new Date();
+			var min = f.getMinutes();
+			var mins = "";
+			//if(min >= 0 && min < 10)
+			//	mins = "0" + f.getMinutes();
+			//else
+			//	mins = f.getMinutes();
+			document.write(diasSemana[f.getDay()] + ", " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear() /*+ ", " + f.getHours() + ":" + mins*/);
+		</script>
+	</footer>
+  	<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+  	<script type="text/javascript" src="js/popper.min.js"></script>
+  	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/borders.css">
+    <link rel="stylesheet" type="text/css" href="css/bgcolors/bg-colors.css">
+
+    <title>A Simple page</title>
+  </head>
+  <body>
+	<div class="bg-display">
+		<h1 class="display-4 bg-display"> InvntrY/InvntO </h1>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav nav-tabs flex-column mr-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"> Usuarios </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"> Clientes </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"> Productos </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"> Proveedores </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"> Resumen </a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="sesionMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Sesion </a>
+								<div class="dropdown-menu" aria-labelledby="sesionMenu">
+									<a class="dropdown-item disabled"> Nombre Usuario </a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#"> Cerrar Sesión </a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+
+			<div class="col-md-5 align-self-center">
+          		<a href="nuevaventa.html" class="btn btn-block btn-lg btn-dark my-2"> Ventas Actuales </a>
+			</div>
+			<div class="col-md-5 align-self-center">
+				<a href="nuevaventa.html" class="btn btn-block btn-lg btn-dark my-2"> Nueva Venta </a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-2">
+				<form>
+					<div class="form-group">
+						<input class="form-control my-2" type="text" placeholder="Código">
+						<button type="submit" class="btn btn-block btn-dark my-2"> Buscar </button>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-10">
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Larry</td>
+							<td>the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>				
+		</div>
+	</div>
+	<footer class="">
+		<script>
+			var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+			var diasSemana = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
+			var f=new Date();
+			var min = f.getMinutes();
+			var mins = "";
+			//if(min >= 0 && min < 10)
+			//	mins = "0" + f.getMinutes();
+			//else
+			//	mins = f.getMinutes();
+			document.write(diasSemana[f.getDay()] + ", " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear() /*+ ", " + f.getHours() + ":" + mins*/);
+		</script>
+	</footer>
+  	<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+  	<script type="text/javascript" src="js/popper.min.js"></script>
+  	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </body>
+</html>
